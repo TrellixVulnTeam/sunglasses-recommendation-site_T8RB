@@ -1,3 +1,3 @@
 from django.db import models
-#cum
+#cummer
 # Create your models here.
