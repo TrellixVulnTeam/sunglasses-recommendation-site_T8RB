@@ -1,3 +1,14 @@
-body{
-	background-color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+	--headerFontFamily: 'Audiowide', cursive;
+}
+
+#nav-menu{
+	background-color: #5f5f5f;
+}
+
+.navbar-brand{
+	font-family: var(--headerFontFamily);
 }
