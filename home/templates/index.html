@@ -17,7 +17,9 @@
 
 	</head>
 	<body>
+	<div class="container">
 		{% include "navbar.html" %}
-		{% include "upload.html" %}
+	</div>
+	{% block content %}{% endblock %}
 	</body>
 </html>
