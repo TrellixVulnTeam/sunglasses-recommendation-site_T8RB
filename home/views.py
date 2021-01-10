@@ -4,12 +4,12 @@ from django.template import loader
 from .models import Image
 from .forms import ImageForm
 # Create your views here.
-def index(request):
+def home(request):
 	context = {}
-	return render(request, 'home/templates/index.html', context)
+	return render(request, 'home/templates/home.html', context)
 
 
-def image_view(request):
+def scan(request):
     if request.method == 'POST':
         form = ImageForm(request.POST, request.FILES)
 
@@ -18,6 +18,6 @@ def image_view(request):
 
     else:
         form = Image()
-    return render(request, 'index.html', {'form': form})
+    return render(request, 'upload.html', {'form': form})
 
 
