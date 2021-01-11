@@ -1,8 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+@font-face{
+	font-family: 'sfb';
+	src: url('/static/fonts/sfb/SFBurlingtonScript.ttf');
+}
+
+@font-face{
+	font-family: 'eminenz';
+	src: url('/static/fonts/eminenz.ttf');
+}
+
 :root{
 	--headerFontFamily: 'Audiowide', cursive;
+}
+
+#main-nav{
+	padding:15px;
+}
+
+#main-nav h2{
+	font-family: 'eminenz';
+	width: 100%;
+	color: white;
+	margin: 0;
+	text-align: center;
 }
 
 #form-wrap{
