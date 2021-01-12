@@ -41,6 +41,7 @@ body{
 #nav h2{
 	font-family: var(--titleFont);
 	padding: 1vh;	
+	font-size: 2vw;
 	float: left;
 }
 
@@ -78,15 +79,16 @@ body{
 }
 
 #get-started-div div h2{
-	font-family: var(--headerFont);
+	font-family: var(--otherFont);
 	font-size: 4vw;
+	font-style: bold;
 }
 
 #get-started-div div p{
 	font-family: var(--otherFont);
-	font-size: 1vw;
+	font-size: 1.25vw;
 	text-decoration: bold;
-	padding-top: 1vh;
+	padding-bottom: 1vh;
 }
 
 #get-started-div div h4{
