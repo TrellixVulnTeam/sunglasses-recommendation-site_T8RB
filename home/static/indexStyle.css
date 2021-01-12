@@ -14,3 +14,34 @@
 body{
 	background-color: var(--primaryColor);
 }
+
+/* NAV BAR STUFF */
+#nav{
+	color: white;
+	padding: 15px;
+	width: 100%;
+	display: inline-block;
+	position: fixed;
+}
+
+#nav a:nth-child(2){
+	float: right;
+	padding: 2vh;
+	font-family: var(--headerFont);
+	outline: none;
+	border: none;
+	color: black;
+	background-color: white;
+	display: none;
+}
+
+#nav h2{
+	font-family: var(--titleFont);
+	margin-left: 2vw;
+	float: left;
+}
+
+#nav h2 a{
+	text-decoration: none;
+	color:white;
+}
