@@ -23,6 +23,7 @@ body{
 	display: inline-block;
 	position: fixed;
 	background-color: transparent;
+	z-index: 1;
 }
 
 #nav a:nth-child(2){
@@ -48,6 +49,8 @@ body{
 }
 
 #get-started-div{
+	position: relative;
+	z-index: 0;
 	padding: 0;
 	margin: 0;
 	width: 100%;
@@ -62,4 +65,34 @@ body{
 	left: 50%;
 	width: 40%;
 	height: auto;
+}
+
+#get-started-div div{
+	position: absolute;
+	left: 10%;
+	top: 20%;
+	color: white;
+	width: 25vw;
+}
+
+#get-started-div div h2{
+	font-family: var(--headerFont);
+	font-size: 3vw;
+}
+
+#get-started-div div p{
+	font-family: var(--otherFont);
+}
+
+#get-started-div div h4{
+	font-family: var(--otherFont);
+	text-transform: uppercase;
+	text-decoration: bold;
+}
+
+#get-started-div a{
+	font-family: var(--headerFont);
+	color: black;
+	background-color: white;
+	padding: 1vw;
 }
