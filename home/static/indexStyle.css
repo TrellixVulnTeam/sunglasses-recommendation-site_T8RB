@@ -56,6 +56,7 @@ body{
 	margin: 0;
 	width: 100%;
 	height: 100vh;
+	border-radius: 0;
 	/* background-image: linear-gradient(15deg, hsl(6, 94%, 79%) 0%, #fa7b6d 74%);*/
 	background: linear-gradient(to bottom right, #34282a 0%, #756164 100%);
 }
@@ -70,19 +71,22 @@ body{
 
 #get-started-div div{
 	position: absolute;
-	left: 10%;
-	top: 20%;
+	left: 12.5%;
+	top: 25%;
 	color: white;
 	width: 25vw;
 }
 
 #get-started-div div h2{
 	font-family: var(--headerFont);
-	font-size: 3vw;
+	font-size: 4vw;
 }
 
 #get-started-div div p{
 	font-family: var(--otherFont);
+	font-size: 1vw;
+	text-decoration: bold;
+	padding-top: 1vh;
 }
 
 #get-started-div div h4{
@@ -96,4 +100,10 @@ body{
 	color: black;
 	background-color: white;
 	padding: 1vw;
+	border-radius: 0;
+	transition: 0.5s;
+}
+
+#get-started-div a:hover{
+	opacity: 0.7;
 }
