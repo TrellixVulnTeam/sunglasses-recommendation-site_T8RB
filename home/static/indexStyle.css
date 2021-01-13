@@ -11,4 +11,30 @@
 	--tertiaryColor: #e94560;
 }
 
+.card-1-1{
+    background-color: var(--primaryColor);
+}
 
+.card-1-2{
+    background-color: var(--primaryColor);
+}
+
+.card-2-1{
+    background-color: var(--primaryColor);
+}
+
+.card-2-2{
+    background-color: var(--primaryColor);
+}
+
+body{
+    background-color: blue;
+}
+
+#about-us{
+    position: relative;
+    background-image: url();
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
