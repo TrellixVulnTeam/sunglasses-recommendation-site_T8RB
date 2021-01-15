@@ -25,9 +25,15 @@ body{
 	position: fixed;
 	background-color: transparent;
 	z-index: 1;
+	transition: background-color 200ms linear;
 }
 
-#nav a:nth-child(2){
+#nav.scrolled{
+	background-color: black;
+	transition: background-color 200ms linear;
+}
+
+#nav-get-started{
 	float: right;
 	padding: 2vh;
 	font-family: var(--headerFont);
@@ -36,6 +42,12 @@ body{
 	color: black;
 	background-color: white;
 	display: none;
+	transition: 500ms linear;
+}
+
+#nav-get-started.displayed{
+	display: inline-block;
+	transition: 500ms linear;
 }
 
 #nav h2{
@@ -90,7 +102,6 @@ body{
 	text-decoration: bold;
 	padding-bottom: 1vh;
 }
-/* bla blau*/
 
 #get-started-div div h4{
 	font-family: var(--otherFont);
@@ -109,4 +120,60 @@ body{
 
 #get-started-div a:hover{
 	opacity: 0.7;
+}
+
+/* Footer stuff */
+#footer-wrap{
+	position: relative;
+	padding: 5vh 0vw 5vh 0;
+	background-color: black;
+	width: 100%;
+	height: auto;
+}
+
+#footer-wrap #navigation-wrap{
+	margin-left: 80%;
+	margin-right: 10%;
+}
+
+#footer-wrap #navigation-wrap h2{
+	font-family: var(--otherFont);
+	text-transform: uppercase;
+	font-size: 1vw;
+	color: white;
+	text-align: center;
+}
+
+#footer-wrap #navigation-wrap ul{
+	text-align: center;
+}
+
+#footer-wrap a{
+	text-decoration: none;
+	color: darkgray;
+	font-family: var(--otherFont);
+}
+
+#footer-wrap a:hover{
+	color: gray;
+}
+
+#footer-title{
+	font-family: var(--titleFont);
+	color: white;
+	margin-left: 5vw;
+}
+
+#footer-wrap p {
+	font-family: var(--otherFont);
+	margin-left: 5vw;
+	color: white;
+}
+
+#footer-wrap i{
+	position: absolute;
+	left: 50%;
+	top: 22.5%;
+	font-size: 5vw;
+	color: white;
 }
