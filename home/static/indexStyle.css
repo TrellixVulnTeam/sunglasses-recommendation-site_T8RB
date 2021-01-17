@@ -53,6 +53,51 @@ body {
 	transition: background-color 200ms linear;
 }
 
+#about-us-title{
+    margin-left: 35%;
+    padding-top: 5%;
+    font-family: var(--headerFont);
+}
+.card{
+    border-radius: 20px;
+    background-color: black;
+    width: 16rem;
+}
+
+.card-img-top{
+    width: auto;
+    height: auto;
+}
+
+.card-title{
+    font-family: var(--headerFont);
+    text-decoration: bold;
+    color: white;
+}
+.card-role{
+    font-family: var(--otherFont);
+     text-decoration: underline;
+}
+
+.card-img-top{
+border-radius: 20px;
+}
+
+body{
+    background-color: white;
+}
+
+#about-us{
+    position: relative;
+    background-image: url();
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn {
+    background-color: black;
+=======
 #nav-get-started{
 	float: right;
 	padding: 2vh;

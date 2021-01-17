@@ -18,6 +18,6 @@ def scan(request):
 
     else:
         form = Image()
-    return render(request, 'upload.html', {'form': form})
+    return render(request, 'face-scan.html', {'form': form})
 
 
