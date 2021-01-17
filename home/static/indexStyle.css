@@ -1,14 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
 
-:root{
-	--titleFont: 'Lobster', cursive;
-	--headerFont: 'Bodoni Moda', serif;
-	--otherFont: 'PT Sans', sans-serif;
-	--primaryColor: #151965;
-	--secondaryColor: #ffcc29;
-	--tertiaryColor: #e94560;
+:root {
+  --titleFont: "Lobster", cursive;
+  --headerFont: "Bodoni Moda", serif;
+  --otherFont: "PT Sans", sans-serif;
+  --primaryColor: #ffffff;
+  --secondaryColor: #ffcc29;
+  --tertiaryColor: #e94560;
+}
+
+body {
+  background-color: var(--primaryColor);
+}
+
+/* NAV BAR STUFF */
+#nav {
+  color: white;
+  padding: 15px;
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+  background-color: transparent;
+  z-index: 1;
+}
+
+#nav a:nth-child(2) {
+  float: right;
+  padding: 2vh;
+  font-family: var(--headerFont);
+  outline: none;
+  border: none;
+  color: black;
+  background-color: white;
+  display: none;
+=======
+#nav{
+	color: white;
+	padding: 15px;
+	width: 100%;
+	display: inline-block;
+	position: fixed;
+	background-color: transparent;
+	z-index: 1;
+	transition: background-color 200ms linear;
+}
+
+#nav.scrolled{
+	background-color: black;
+	transition: background-color 200ms linear;
 }
 
 #about-us-title{
@@ -55,4 +97,152 @@ body{
 
 .btn {
     background-color: black;
+=======
+#nav-get-started{
+	float: right;
+	padding: 2vh;
+	font-family: var(--headerFont);
+	outline: none;
+	border: none;
+	color: black;
+	background-color: white;
+	display: none;
+	transition: 500ms linear;
+}
+
+#nav-get-started.displayed{
+	display: inline-block;
+	transition: 500ms linear;
+}
+
+#nav h2 {
+  font-family: var(--titleFont);
+  padding: 1vh;
+  font-size: 2vw;
+  float: left;
+}
+
+#nav h2 a {
+  text-decoration: none;
+  color: white;
+}
+
+#get-started-div {
+  position: relative;
+  z-index: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  border-radius: 0;
+  /* background-image: linear-gradient(15deg, hsl(6, 94%, 79%) 0%, #fa7b6d 74%);*/
+  background: linear-gradient(to bottom right, #34282a 0%, #756164 100%);
+}
+/* JUMBOTRON STUFF */
+#get-started-div img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40%;
+  height: auto;
+}
+
+#get-started-div div {
+  position: absolute;
+  left: 12.5%;
+  top: 25%;
+  color: white;
+  width: 25vw;
+}
+
+#get-started-div div h2 {
+  font-family: var(--otherFont);
+  font-size: 4vw;
+  font-style: bold;
+}
+
+#get-started-div div p {
+  font-family: var(--otherFont);
+  font-size: 1.25vw;
+  text-decoration: bold;
+  padding-bottom: 1vh;
+}
+
+#get-started-div div h4 {
+  font-family: var(--otherFont);
+  text-transform: uppercase;
+  text-decoration: bold;
+}
+
+#get-started-div a {
+  font-family: var(--headerFont);
+  color: black;
+  background-color: white;
+  padding: 1vw;
+  border-radius: 0;
+  transition: 0.5s;
+}
+
+#get-started-div a:hover {
+  opacity: 0.7;
+}
+
+#how-it-works-heading {
+  text-align: center;
+}
+
+/* Footer stuff */
+#footer-wrap{
+	position: relative;
+	padding: 5vh 0vw 5vh 0;
+	background-color: black;
+	width: 100%;
+	height: auto;
+}
+
+#footer-wrap #navigation-wrap{
+	margin-left: 80%;
+	margin-right: 10%;
+}
+
+#footer-wrap #navigation-wrap h2{
+	font-family: var(--otherFont);
+	text-transform: uppercase;
+	font-size: 1vw;
+	color: white;
+	text-align: center;
+}
+
+#footer-wrap #navigation-wrap ul{
+	text-align: center;
+}
+
+#footer-wrap a{
+	text-decoration: none;
+	color: darkgray;
+	font-family: var(--otherFont);
+}
+
+#footer-wrap a:hover{
+	color: gray;
+}
+
+#footer-title{
+	font-family: var(--titleFont);
+	color: white;
+	margin-left: 5vw;
+}
+
+#footer-wrap p {
+	font-family: var(--otherFont);
+	margin-left: 5vw;
+	color: white;
+}
+
+#footer-wrap i{
+	position: absolute;
+	left: 50%;
+	top: 22.5%;
+	font-size: 5vw;
+	color: white;
 }
